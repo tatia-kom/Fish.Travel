@@ -1,0 +1,50 @@
+@import "layout/var";
+
+.footer {
+  background: white;
+  padding: 15px 0 28px;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 $side-padding;
+  }
+
+  &__socials {
+    display: flex;
+  }
+
+  &__soc {
+    margin-right: 18px;
+  }
+
+  &__contacts {
+    margin: 20px $side-padding 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__link {
+    font-size: 14px;
+    font-weight: $regular;
+    color: $main-grey;
+    margin-top: 8px;
+    display: inline-block;
+    text-decoration: underline;
+  }
+
+  &__menu {
+    margin: 22px $side-padding 32px;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__copyright {
+    border-top: 1px solid $body-color;
+    padding: 28px $side-padding 0;
+    color: $light-grey;
+    font-size: 14px;
+    font-weight: $regular;
+    line-height: 1.43;
+  }
+}

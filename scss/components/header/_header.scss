@@ -1,0 +1,23 @@
+@import "layout/var";
+
+.header {
+  padding: 15px $side-padding 14px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__logo {
+    flex-shrink: 0;
+  }
+
+  &__menu {
+
+  }
+
+  &__menu-button {
+    padding: 0;
+    border: 0;
+    background: transparent;
+  }
+}
