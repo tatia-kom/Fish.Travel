@@ -1,0 +1,45 @@
+@import "layout/var";
+
+.done {
+  background: white;
+  padding: $side-padding;
+
+  &__content {
+    margin: auto 0;
+  }
+
+  &__icon {
+    text-align: center;
+  }
+
+  &__title {
+    color: $green;
+    font-size: em(23);
+    font-family: $top-title-font;
+    line-height: 1.17;
+    text-align: center;
+    margin-top: em(21,23);
+  }
+
+  &__text {
+    font-size: em(14);
+    line-height: 1.43;
+    margin-top: em(49,14);
+  }
+
+  &__contacts {
+    font-size: em(14);
+    line-height: 1.43;
+    color: $light-grey;
+    margin-top: em(44,14);
+  }
+
+  &__link {
+    color: $light-grey;
+    text-decoration: underline;
+
+    &--no_line {
+      text-decoration: none;
+    }
+  }
+}

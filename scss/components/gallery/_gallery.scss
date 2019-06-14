@@ -1,0 +1,64 @@
+@import "layout/var";
+
+.gallery {
+  background: black;
+  height: 100vh;
+  overflow: hidden;
+
+  &__slider {
+    height: 100%;
+    align-items: center;
+  }
+
+  &__slide {
+    height: 100vh;
+  }
+
+  &__photo {
+    display: flex;
+    height: 100%;
+
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      margin: auto;
+    }
+  }
+
+  &__dots {
+    position: absolute;
+    top: em(34);
+    left: $side-padding;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+
+    li {
+      width: em(6);
+      height: em(6);
+      background: white;
+      border-radius: 50%;
+      border: em(3) solid black;
+      margin: 0 em(2);
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      button {
+        font-size: 0;
+        color: transparent;
+        width: 0;
+        height: 0;
+        border: 0;
+        padding: 0;
+      }
+
+      &.slick-active {
+        background: black;
+        border-color: white;
+      }
+    }
+  }
+}

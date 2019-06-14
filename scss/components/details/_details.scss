@@ -1,0 +1,29 @@
+@import "layout/var";
+
+.details {
+  height: 100%;
+  background: white;
+  padding: em(100) $side-padding 0;
+
+  &__image {
+    margin: 0 $side-padding;
+    text-align: center;
+  }
+
+  &__content {
+    margin-top: em(48);
+  }
+
+  &__title {
+    font-size: em(23);
+    font-family: $top-title-font;
+    color: $light-grey;
+    margin-bottom: em(30,23);
+  }
+
+  &__text {
+    font-size: em(14);
+    line-height: em(20,14);
+    margin-bottom: em(25,14);
+  }
+}

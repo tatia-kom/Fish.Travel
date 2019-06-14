@@ -1,0 +1,11 @@
+@import "layout/var";
+
+.close {
+  width: em(24);
+  height: em(24);
+  position: absolute;
+  top: em(28);
+  right: $side-padding;
+  background: url('../img/close.svg') no-repeat center;
+  background-size: cover;
+}

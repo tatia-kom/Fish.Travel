@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="text/html" charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fish.Travel Photo Gallery</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.min.css"/>
+  
+</head>
+<body>
+
+    <!-- Details -->
+
+    <section class="gallery">
+        <span class="close"></span>
+
+        <div class="gallery__slider">
+            <div class="gallery__slide"><div class="gallery__photo"><img src="img/img.png" alt=""></div></div>
+            <div class="gallery__slide"><div class="gallery__photo"><img src="img/img.png" alt=""></div></div>
+            <div class="gallery__slide"><div class="gallery__photo"><img src="img/img.png" alt=""></div></div>
+            <div class="gallery__slide"><div class="gallery__photo"><img src="img/img.png" alt=""></div></div>
+        </div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.gallery__slider').slick({
+                dots: true,
+                arrows: false,
+                autoplay: false,
+                infinite: false,
+                dotsClass: 'gallery__dots'
+            });
+        });
+    </script>
+</body>
+</html>
