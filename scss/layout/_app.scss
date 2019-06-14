@@ -7,6 +7,11 @@ body {
     margin: 0;
     padding: 0;
     background: $body-color;
+    position: relative;
+
+    &.white-body {
+        background: white;
+    }
 }
 
 p {
@@ -17,9 +22,17 @@ h1,h2,h3,h4,h5,h6 {
     margin: 0;
     font-weight: normal;
 }
+header, footer, section, div, span, p, button, a, input, textarea {
+    box-sizing: border-box;
+}
 
 button,input,textarea{
     outline: none;
+}
+button {
+    padding: 0;
+    border: 0;
+    background-color: transparent;
 }
 a {
     text-decoration: none;

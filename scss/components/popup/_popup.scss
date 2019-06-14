@@ -1,0 +1,16 @@
+@import "layout/var";
+
+.popup {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  border-radius: em(6);
+  box-shadow: 0 em(-9) em(30) 0 rgba(0, 0, 0, 0.11);
+  background-color: white;
+  z-index: 1000;
+
+  &--big {
+    top: em(80);
+  }
+}

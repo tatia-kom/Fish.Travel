@@ -1,0 +1,51 @@
+@import "layout/var";
+
+.members-form {
+  display: flex;
+
+  &__side {
+    width: 50%;
+    flex-shrink: 0;
+    padding: em(27) $side-padding em(49);
+    border-right: em(1) solid $body-color;
+
+    &:last-child {
+      border-right: 0;
+    }
+  }
+
+  &__label {
+    font-size: em(14);
+    line-height: 1.14;
+    color: $back-grey;
+    display: block;
+    text-align: center;
+    margin-bottom: em(47,14);
+  }
+
+  &__button {
+    width: em(32);
+    height: em(32);
+    font-size: 1em;
+    margin: 0 auto;
+    background-size: cover;
+    display: block;
+
+
+    &--plus {
+      background-image: url('../img/plus.svg');
+    }
+
+    &--minus {
+      background-image: url('../img/minus.svg');
+    }
+  }
+
+  &__input {
+    font-size: em(30);
+    font-weight: $bold;
+    display: block;
+    text-align: center;
+    margin: em(21,30) 0;
+  }
+}
