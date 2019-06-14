@@ -1,7 +1,7 @@
 @import "layout/var";
 
 .header {
-  padding: 15px $side-padding 14px;
+  padding: em(15) $side-padding em(14);
   background: white;
   display: flex;
   align-items: center;
@@ -9,6 +9,15 @@
 
   &__logo {
     flex-shrink: 0;
+    display: flex;
+  }
+
+  &__logo-text {
+    font-size: em(14);
+    line-height: 1.21;
+    margin-left: em(13,14);
+    color: $blue;
+    width: em(133,14);
   }
 
   &__menu {

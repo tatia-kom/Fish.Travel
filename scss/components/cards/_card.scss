@@ -2,41 +2,41 @@
 
 .card {
   background: white;
-  box-shadow: 0 0 21px 0 rgba(0, 0, 0, 0.11);
-  padding: 20px 0 24px;
+  box-shadow: 0 0 em(21) 0 rgba(0, 0, 0, 0.11);
+  padding: em(20) 0 em(24);
   overflow-x: hidden;
-  margin-top: 24px;
+  margin-top: em(24);
 
   &:first-child {
     margin-top: 0;
   }
 
   &__title {
-    font-size: 18px;
+    font-size: em(18);
     font-weight: $bold;
     color: $main-grey;
     margin: 0 $side-padding;
   }
 
   &__award {
-    margin: 0 $side-padding;
-    font-size: 12px;
+    margin: 0 em(15,12);
+    font-size: em(12);
     font-weight: $bold;
     line-height: 1.17;
-    padding-left: 44px;
-    height: 32px;
+    padding-left: em(44,12);
+    height: em(32,12);
     display: flex;
     align-items: center;
     position: relative;
-    width: 95px;
-    margin-top: 12px;
+    width: em(95,12);
+    margin-top: em(12,12);
 
     &:before {
       position: absolute;
       content: '';
       display: block;
-      width: 32px;
-      height: 32px;
+      width: em(32,12);
+      height: em(32,12);
       left: 0;
       top: 0;
       background-position: center;
@@ -61,7 +61,7 @@
   }
 
   &__photos {
-    margin-top: 19px;
+    margin-top: em(19);
     display: flex;
     overflow-x: auto;
 
@@ -76,12 +76,12 @@
   }
 
   &__image {
-    width: 288px;
-    height: 200px;
-    border-radius: 4px;
+    width: em(288);
+    height: em(200);
+    border-radius: em(4);
     background-size: cover;
     background-position: center;
-    margin-right: 4px;
+    margin-right: em(4);
     flex-shrink: 0;
 
     &:first-child {
@@ -99,8 +99,8 @@
   }
 
   &__text {
-    font-size: 12px;
-    line-height: 20px;
+    font-size: em(12);
+    line-height: em(20,12);
     position: relative;
     display: block;
     color: $main-grey;
@@ -113,36 +113,36 @@
     }
 
     &--place {
-      padding-left: 24px;
+      padding-left: em(24,12);
 
       &:before {
         top: 0;
-        width: 20px;
-        height: 20px;
+        width: em(20,12);
+        height: em(20,12);
         background: url('../img/place.svg') no-repeat center;
       }
     }
 
     &--marker {
-      padding-left: 17px;
-      margin-left: 11px;
+      padding-left: em(17,12);
+      margin-left: em(11,12);
 
       &:before {
-        width: 6px;
-        height: 6px;
+        width: em(6,12);
+        height: em(6,12);
         background: $body-color;
         border-radius: 50%;
-        top: 7px;
+        top: em(7,12);
       }
     }
 
     &--fire {
-      padding-left: 24px;
+      padding-left: em(24,12);
 
       &:before {
         top: 0;
-        width: 20px;
-        height: 20px;
+        width: em(20,12);
+        height: em(20,12);
         background: url('../img/fire.svg') no-repeat center top;
       }
     }
@@ -157,11 +157,11 @@
   }
 
   &__options {
-    margin-top: 25px;
+    margin-top: em(25);
   }
 
   &__bottom {
-    margin: 32px $side-padding 0;
+    margin: em(32) $side-padding 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -170,23 +170,23 @@
   &__price {
     color: $aqua;
     font-family: $top-title-font;
-    font-size: 16px;
+    font-size: em(16);
     display: flex;
     align-items: center;
   }
 
   &__amount {
-    font-size: 22px;
+    font-size: em(22,16);
     line-height: 1.23;
-    margin-left: 8px;
+    margin-left: em(8,22);
   }
 
   &__button {
     background: $blue;
-    border-radius: 4px;
-    width: 136px;
-    height: 40px;
-    font-size: 16px;
+    border-radius: em(4);
+    width: em(136);
+    height: em(40);
+    font-size: em(16);
     font-weight: $bold;
     color: white;
     border: 0;

@@ -16,17 +16,17 @@
 
   &__item {
     display: block;
-    font-size: 12px;
+    font-size: em(12);
     font-weight: $bold;
     color: $main-grey;
     border: 1px solid $border-grey;
-    border-radius: 12px;
+    border-radius: em(12,12);
     flex-shrink: 0;
-    padding: 4px 14px;
-    margin-right: 4px;
+    padding: em(4,12) em(14,12);
+    margin-right: em(4,12);
 
     &:first-child {
-      margin-left: $side-padding;
+      margin-left: em(15,12);
     }
 
     &--blue {

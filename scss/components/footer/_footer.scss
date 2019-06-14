@@ -2,7 +2,7 @@
 
 .footer {
   background: white;
-  padding: 15px 0 28px;
+  padding: $side-padding 0 em(28);
 
   &__top {
     display: flex;
@@ -15,35 +15,35 @@
   }
 
   &__soc {
-    margin-right: 18px;
+    margin-right: em(18);
   }
 
   &__contacts {
-    margin: 20px $side-padding 0;
+    margin: em(20) $side-padding 0;
     padding: 0;
     list-style: none;
   }
 
   &__link {
-    font-size: 14px;
+    font-size: em(14);
     font-weight: $regular;
     color: $main-grey;
-    margin-top: 8px;
+    margin-top: em(8,14);
     display: inline-block;
     text-decoration: underline;
   }
 
   &__menu {
-    margin: 22px $side-padding 32px;
+    margin: em(22) $side-padding em(32);
     padding: 0;
     list-style: none;
   }
 
   &__copyright {
-    border-top: 1px solid $body-color;
-    padding: 28px $side-padding 0;
+    border-top: em(1,14) solid $body-color;
+    padding: em(28,14) $side-padding 0;
     color: $light-grey;
-    font-size: 14px;
+    font-size: em(14);
     font-weight: $regular;
     line-height: 1.43;
   }
