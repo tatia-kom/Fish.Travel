@@ -40,5 +40,11 @@
       background-image: linear-gradient(to right, #dc85d7, #b64d4d);
       border-color: transparent;
     }
+
+    &--aqua {
+      color: white;
+      background: $aqua;
+      border-color: $aqua;
+    }
   }
 }
