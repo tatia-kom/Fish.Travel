@@ -18,6 +18,14 @@
     &:last-child {
       border-bottom: 0;
     }
+
+    &--payment {
+      padding: em(17) $side-padding em(17);
+
+      &:last-child {
+        border-bottom: em(1) solid $body-color;
+      }
+    }
   }
 
   &__icon {
@@ -33,8 +41,36 @@
     }
   }
 
+  &__payment-icon {
+    width: em(66);
+    height: em(46);
+    flex-shrink: 0;
+    background-size: cover;
+    background-position: center;
+  }
+
   &__description {
     padding-left: em(16);
+    width: 100%;
+  }
+
+  &__payment-name {
+    font-size: em(16);
+    font-weight: $bold;
+    display: block;
+    width: 100%;
+    position: relative;
+
+    &:after {
+      position: absolute;
+      content: '';
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: em(24,16);
+      height: em(24,16);
+      background: url('../img/right-arrow.svg') no-repeat center;
+    }
   }
 
   &__text {
