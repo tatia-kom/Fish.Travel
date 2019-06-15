@@ -97,6 +97,25 @@
     }
   }
 
+  &__boat-description {
+    display: flex;
+    margin: em(16) $side-padding em(4);
+  }
+
+  &__boat-status {
+    margin: 0!important;
+    color: white;
+    border-color: transparent;
+
+    &--premium {
+      background: linear-gradient(to right, #f2ce00, #e0a000);
+    }
+
+    &--comfort {
+      background: linear-gradient(to right, #be53c7, #4f35c4);
+    }
+  }
+
   &__description {
     margin: $side-padding $side-padding 0;
   }
@@ -175,7 +194,7 @@
     }
   }
 
-  &__stars {
+  /*&__stars {
     display: flex;
     align-items: center;
     margin-left: em(6);
@@ -193,10 +212,14 @@
     &--full {
       opacity: 1;
     }
-  }
+  }*/
 
   &__options {
     margin-top: em(35);
+
+    &--boat {
+      margin-top: em(23);
+    }
   }
 
   &__bottom {
@@ -207,6 +230,10 @@
 
     &--small_top {
       margin-top: em(13);
+    }
+
+    &--boat {
+      margin-top: em(24);
     }
   }
 
