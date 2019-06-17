@@ -18,12 +18,42 @@
     margin: 0 $side-padding;
   }
 
+  &__head {
+    display: flex;
+    margin: 0 $side-padding;
+  }
+
+  &__icon {
+    align-self: center;
+  }
+
+  &__head-num {
+    margin-left: em(16,43);
+    font-size: em(43);
+    line-height: 1.0;
+    font-weight: $bold;
+    font-family: $top-title-font;
+  }
+
+  &__head-text {
+    font-size: em(14);
+    font-weight: $bold;
+    margin-left: em(13,14);
+    line-height: 1.29;
+    align-self: flex-end;
+    margin-bottom: em(2,14);
+  }
+
+  &__head-aqua {
+    color: $aqua;
+  }
+
   &__subtitle {
     font-size: em(14);
     font-weight: $bold;
     color: $main-grey;
     line-height: 1.43;
-    margin: em(9,14) em(15,14) 0;
+    margin: em(27,14) em(15,14) 0;
   }
 
   &__award {
@@ -277,7 +307,7 @@
 
 
 
-  &__sun {
+  /*&__sun {
     position: relative;
     height: em(24);
     margin: em(19) $side-padding em(11);
@@ -334,5 +364,5 @@
     &--time_6 {
       width: em(95);
     }
-  }
+  }*/
 }
