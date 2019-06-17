@@ -8,4 +8,8 @@
   right: $side-padding;
   background: url('../img/close.svg') no-repeat center;
   background-size: cover;
+
+  &--center {
+    top: $side-padding;
+  }
 }
