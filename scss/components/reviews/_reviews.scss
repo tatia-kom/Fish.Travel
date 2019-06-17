@@ -1,0 +1,68 @@
+@import "layout/var";
+
+.reviews {
+  border-bottom: em(1) solid $body-color;
+  padding: 0 0 em(16);
+
+  &__slider {
+    padding: em(35) 0 0;
+    margin: em(17) $side-padding 0;
+  }
+
+  &__slide {
+
+  }
+
+  &__person {
+    display: flex;
+    align-items: center;
+  }
+
+  &__ava {
+    width: em(56);
+    height: em(56);
+    background-size: cover;
+    background-position: center;
+  }
+
+  &__description {
+    margin-left: em(18);
+  }
+
+  &__text {
+    font-size: em(14);
+    line-height: 1.43;
+    margin: 0;
+  }
+
+  &__name {
+    font-weight: $bold;
+  }
+
+  &__for {
+    font-weight: $bold;
+    color: $blue;
+  }
+
+  &__content {
+    margin: em(20) 0;
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__date {
+    font-size: 14px;
+    line-height: 1.14;
+    color: $back-grey;
+  }
+
+  &__link {
+    color: $back-grey;
+    font-size: em(14);
+    text-decoration: underline;
+  }
+}

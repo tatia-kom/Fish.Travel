@@ -1,0 +1,100 @@
+@import "layout/var";
+
+.about {
+  position: relative;
+
+  &__title {
+    position: absolute;
+    color: white;
+    font-size: em(23);
+    font-family: $top-title-font;
+    line-height: 1.17;
+    z-index: 1;
+    top: em(41,23);
+    left: em(15,23);
+  }
+
+  &__slider {
+    height: em(360);
+  }
+
+  &__slide {
+    height: em(360);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+    &:before {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: em(140);
+      top: 0;
+      left: 0;
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0));
+      z-index: 0;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: em(140);
+      bottom: 0;
+      left: 0;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0));
+      z-index: 0;
+    }
+  }
+
+  &__text {
+    font-size: em(14);
+    line-height: 1.29;
+    color: white;
+    display: flex;
+    align-items: center;
+    margin: 0 em(15,14);
+    position: absolute;
+    bottom: em(19,14);
+    z-index: 1;
+  }
+
+  &__num {
+    font-size: em(43);
+    font-family: $top-title-font;
+    font-weight: $bold;
+    margin-right: em(15,43);
+  }
+
+
+
+
+  &__dots {
+    top: em(89);
+    left: $side-padding;
+
+    li {
+      background: transparent;
+      border-color: transparent;
+
+      button {
+        font-size: em(16);
+        width: em(6);
+        height: em(6);
+        background: white;
+        border-radius: 50%;
+      }
+
+      &.slick-active {
+        background: transparent;
+        border-color: white;
+
+        button {
+          background: transparent;
+        }
+      }
+    }
+  }
+}

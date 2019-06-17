@@ -1,0 +1,41 @@
+@import "layout/var";
+
+.advantages {
+  background: white;
+  padding-top: 1px;
+  padding-bottom: em(6);
+
+  &__flex {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: em(17);
+  }
+
+  &__item {
+    width: 50%;
+    flex-shrink: 0;
+    padding: em(23) $side-padding em(33);
+    border-top: em(1) solid $body-color;
+
+    &:nth-child(1), &:nth-child(3) {
+      border-right: em(1) solid $body-color;
+    }
+    &:nth-child(3), &:nth-child(4) {
+      border-bottom: em(1) solid $body-color;
+    }
+  }
+
+  &__image {
+    height: em(63);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__text {
+    font-size: em(14);
+    line-height: 1.29;
+    text-align: center;
+    margin-top: em(25,14);
+  }
+}

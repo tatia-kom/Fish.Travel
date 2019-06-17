@@ -1,0 +1,72 @@
+@import "layout/var";
+
+.contain {
+  border-bottom: em(1) solid $body-color;
+  padding: em(6) 0 em(32);
+
+  &__nav {
+    margin-top: em(27);
+    margin-left: em(15);
+  }
+
+  &__nav-item {
+    font-size: em(18);
+    font-weight: $bold;
+    color: #d6d6d6;
+    margin: 0 em(15,18)!important;
+    position: relative;
+    padding-top: em(10,18);
+    outline: none!important;
+
+    &.slick-current {
+      color: $main-grey;
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        display: block;
+        width: em(6,18);
+        height: em(6,18);
+        background: black;
+        border-radius: 50%;
+      }
+    }
+  }
+
+  &__slider {
+    margin: em(25) $side-padding 0;
+  }
+
+  &__slide {
+
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__list-item {
+    font-size: em(14);
+    margin-bottom: em(8,14);
+    padding-left: em(37,14);
+    position: relative;
+    line-height: em(24,14);
+
+    &:before {
+      content: '';
+      width: em(24,14);
+      height: em(24,14);
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      background: url('../img/check.svg') no-repeat center;
+      background-size: em(13) em(12);
+    }
+  }
+}

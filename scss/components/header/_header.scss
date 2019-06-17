@@ -18,6 +18,10 @@
     margin-left: em(13,14);
     color: $blue;
     width: em(133,14);
+
+    &--white {
+      color: white;
+    }
   }
 
   &__menu {

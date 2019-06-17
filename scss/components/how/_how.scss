@@ -1,0 +1,44 @@
+@import "layout/var";
+
+.how {
+  background: white;
+  padding: 1px 0 em(32);
+
+  &__slider {
+    margin: 0 $side-padding;
+    padding-top: em(42);
+    position: relative;
+  }
+
+  &__slide {
+
+  }
+
+  &__text {
+    font-size: em(14);
+    line-height: 1.43;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  &__num {
+    color: #d6d6d6;
+    font-size: em(43);
+    font-weight: $bold;
+    font-family: $top-title-font;
+    margin-right: em(17,43);
+    line-height: 1.0;
+  }
+
+  &__image {
+    display: flex;
+    justify-content: center;
+    margin-top: em(28);
+  }
+
+
+
+  &__dots {
+    top: em(16);
+  }
+}

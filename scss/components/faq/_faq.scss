@@ -1,0 +1,40 @@
+@import "layout/var";
+
+.faq {
+  border-bottom: em(1) solid $body-color;
+  background: white;
+  padding: em(6) 0 0;
+  margin-bottom: em(30);
+
+  &__slider {
+    padding: em(34) 0 em(16);
+    margin: em(15) $side-padding 0;
+  }
+
+  &__slide {
+
+  }
+
+  &__question {
+    font-size: em(18);
+    font-weight: $bold;
+  }
+
+  &__answer {
+    margin-top: em(24);
+  }
+
+  &__text {
+    font-size: em(14);
+    line-height: 1.43;
+    margin-bottom: em(26,14);
+  }
+
+  &__link {
+    color: $back-grey;
+    font-size: em(14);
+    text-decoration: underline;
+    text-align: right;
+    display: block;
+  }
+}

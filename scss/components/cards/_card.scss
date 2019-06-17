@@ -111,8 +111,16 @@
       background: linear-gradient(to right, #f2ce00, #e0a000);
     }
 
-    &--comfort {
+    &--comfort_plus {
       background: linear-gradient(to right, #be53c7, #4f35c4);
+    }
+
+    &--comfort {
+      background: linear-gradient(to right, #5dc2d0, #1673d9);
+    }
+
+    &--econom {
+      background: linear-gradient(to right, #a8c215, #31a767);
     }
   }
 

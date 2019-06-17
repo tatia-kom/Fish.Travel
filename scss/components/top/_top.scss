@@ -1,7 +1,7 @@
 @import "layout/var";
 
 .top {
-  margin-top: em(1);
+  border-top: em(1) solid $body-color;
   background: white;
   padding: $side-padding 0 em(8);
   overflow-x: hidden;

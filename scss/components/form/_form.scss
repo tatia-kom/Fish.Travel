@@ -7,8 +7,22 @@
     border-bottom: em(1) solid $body-color;
   }
 
+  &--index {
+    background: white;
+  }
+
+  &__flex {
+    display: flex;
+  }
+
   &__item {
     padding: em(12) $side-padding em(16);
+    position: relative;
+
+    &--half {
+      width: 50%;
+      flex-shrink: 0;
+    }
   }
 
   &__label {
@@ -30,6 +44,22 @@
     box-sizing: border-box;
     width: 100%;
     color: $main-grey;
+
+    &--with_icon {
+      padding-right: em(40);
+    }
+  }
+
+  &__input-icon {
+    width: em(24);
+    height: em(24);
+    background-position: center;
+    background-size: em(18) em(20);
+    background-repeat: no-repeat;
+    display: block;
+    position: absolute;
+    bottom: em(24);
+    right: em(24);
   }
 
   &__textarea {
