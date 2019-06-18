@@ -6,11 +6,11 @@
 
   &__slider {
     padding: em(35) 0 0;
-    margin: em(17) $side-padding 0;
+    margin: em(17) 0 0 $side-padding;
   }
 
   &__slide {
-
+    padding-right: $side-padding;
   }
 
   &__person {

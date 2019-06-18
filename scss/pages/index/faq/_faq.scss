@@ -8,11 +8,11 @@
 
   &__slider {
     padding: em(34) 0 em(16);
-    margin: em(15) $side-padding 0;
+    margin: em(15) 0 0 $side-padding;
   }
 
   &__slide {
-
+    padding-right: $side-padding;
   }
 
   &__question {

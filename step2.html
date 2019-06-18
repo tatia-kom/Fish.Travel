@@ -7,6 +7,9 @@
     <title>Fish.Travel Step 2</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+
     <link rel="stylesheet" type="text/css" href="css/style.min.css"/>
   
 </head>
@@ -131,5 +134,20 @@
         </ul>
         <p class="footer__copyright">Fish.Travel – Международная система бронирования рыболовных туров.<br>Copyright © 2018 Fish.Travel Все права защищены.</p>
     </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script>
+        $(document).ready(function() {
+
+            $('.options').slick({
+                dots: false,
+                arrows: false,
+                autoplay: false,
+                infinite: false,
+                variableWidth: true,
+            });
+        });
+    </script>
 </body>
 </html>

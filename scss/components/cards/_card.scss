@@ -119,11 +119,16 @@
     border-radius: em(4);
     background-size: cover;
     background-position: center;
-    margin-right: em(4);
     flex-shrink: 0;
+    box-sizing: content-box;
+    border-right: em(4) solid white;
 
     &:first-child {
       margin-left: $side-padding;
+    }
+
+    &:last-child {
+      border-right-width: $side-padding;
     }
   }
 
