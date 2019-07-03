@@ -23,6 +23,11 @@
       width: 50%;
       flex-shrink: 0;
     }
+
+    &--no_left_right {
+      padding-left: 0;
+      padding-right: 0;
+    }
   }
 
   &__label {

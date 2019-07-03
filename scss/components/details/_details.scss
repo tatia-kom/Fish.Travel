@@ -5,6 +5,10 @@
   background: white;
   padding: em(100) $side-padding 0;
 
+  &--small_top {
+    padding-top: em(78);
+  }
+
   &__image {
     margin: 0 $side-padding;
     text-align: center;
@@ -12,6 +16,10 @@
 
   &__content {
     margin-top: em(48);
+
+    &--no_top {
+      margin-top: 0;
+    }
   }
 
   &__title {

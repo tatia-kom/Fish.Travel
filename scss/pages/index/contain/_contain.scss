@@ -48,6 +48,10 @@
     margin: 0;
     padding: 0;
     list-style: none;
+
+    &--modal {
+      margin-bottom: em(32);
+    }
   }
 
   &__list-item {
@@ -68,5 +72,12 @@
       background: url('../img/check.svg') no-repeat center;
       background-size: em(13) em(12);
     }
+  }
+
+  &__modal-title {
+    font-size: em(18);
+    font-weight: $bold;
+    margin: 0 0 em(25,18);
+    color: $main-grey;
   }
 }

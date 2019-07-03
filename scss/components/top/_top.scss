@@ -33,4 +33,20 @@
     color: $light-grey;
     margin: em(35,23) em(15,23) em(10,23);
   }
+
+  &__subtitle {
+    font-size: em(18);
+    font-family: $main-font;
+    font-weight: $bold;
+    color: $main-grey;
+    margin: 0 em(15,18);
+  }
+
+  &__text {
+    font-size: em(14);
+    line-height: 1.43;
+    font-family: $main-font;
+    color: $main-grey;
+    margin: em(49, 14) em(15,14) 0;
+  }
 }
