@@ -3,7 +3,7 @@
 .header-index {
   background: url('../img/bg-main.jpg') center;
   background-size: cover;
-  padding: em(17) $side-padding em(26);
+  padding: em(17) $side-padding;
 
   &__flex {
     display: flex;
@@ -14,6 +14,7 @@
   &__title {
     color: white;
     font-size: em(23);
+    font-weight: $bold;
     font-family: $top-title-font;
     line-height: 1.17;
     width: em(202,23);

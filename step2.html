@@ -30,14 +30,17 @@
     <!-- PAGE TOP -->
 
     <section class="top">
-        <a href="#" class="top__back">Back</a>
+        <div class="top__back-with-filter">
+            <a href="#" class="top__back">Back</a>
+            <span class="top__customize">Customize tour</span>
+        </div>
 
         <div class="options">
-            <span class="options__item options__item--blue">New Jersey</span>
-            <span class="options__item options__item--blue">May 21</span>
-            <span class="options__item options__item--blue">4 adults</span>
-            <span class="options__item options__item--blue">1 day</span>
-            <span class="options__item options__item--blue">More</span>
+            <span class="options__item">New Jersey</span>
+            <span class="options__item">May 21</span>
+            <span class="options__item">4 adults</span>
+            <span class="options__item">1 day</span>
+            <span class="options__item">More</span>
         </div>
 
         <h2 class="top__title">4 fishing tours found</h2>
@@ -53,26 +56,27 @@
                 <div class="card__image" style="background-image: url(img/img.png)"></div>
                 <div class="card__image" style="background-image: url(img/img.png)"></div>
             </div>
-            <div class="card__description">
-                <div class="card__text-line">
-                    <span class="card__text card__text--place">New Jersey</span><span class="card__text card__text--marker">до 7 человек</span>
-                </div>
-                <div class="card__text-line">
-                    <span class="card__text">Опыт не требуется</span><span class="card__text card__text--marker">50 км от берега</span>
-                </div>
-                <div class="card__text-line">
-                    <span class="card__text card__text--bold card__text--fire">Going fast</span><span class="card__text card__text--marker card__text--bold">12 bookings last month</span>
-                </div>
-            </div>
-            <div class="options card__options">
+            <div class="options card__options card__options--boat">
                 <div class="options__item options__item--active">Катран</div>
                 <div class="options__item">Карась</div>
                 <div class="options__item">Барабуля</div>
                 <div class="options__item">Длиннохвост</div>
             </div>
+            <div class="card__boat-type">
+                <span class="card__boat-name">Walkaround or <br>Pilothouse Boat</span>
+                <span class="options__item card__boat-status card__boat-status--comfort_plus">Comfort +</span>
+            </div>
+            <div class="card__description">
+                <div class="card__text-line">
+                    <span class="card__text">Up to 1 mile from the shore</span><span class="card__text card__text--marker">5 hours</span>
+                </div>
+            </div>
+            <div class="card__text-line card__text-line--alone">
+                <span class="card__text card__text--bold card__text--fire">Last chance!</span><span class="card__text card__text--marker card__text--bold">2 boats left</span>
+            </div>
             <div class="card__bottom">
-                <p class="card__price">from <span class="card__amount">350$</span></p>
-                <button class="card__button">Choose</button>
+                <p class="card__price"><span class="card__amount card__amount--no_left">350$</span></p>
+                <button class="card__button">View details</button>
             </div>
         </div>
         <div class="card">
@@ -82,27 +86,40 @@
                 <div class="card__image" style="background-image: url(img/img.png)"></div>
                 <div class="card__image" style="background-image: url(img/img.png)"></div>
             </div>
-            <div class="card__description">
-                <div class="card__text-line">
-                    <span class="card__text card__text--place">New Jersey</span><span class="card__text card__text--marker">до 4 человек</span>
-                </div>
-                <div class="card__text-line">
-                    <span class="card__text">Опыт не требуется</span><span class="card__text card__text--marker">10 км от берега</span>
-                </div>
-                <div class="card__text-line">
-                    <span class="card__text card__text--bold card__text--fire">Going fast</span><span class="card__text card__text--marker card__text--bold">8 bookings last month</span>
-                </div>
-            </div>
-            <div class="options card__options">
+            <div class="options card__options card__options--boat">
                 <div class="options__item">Судак</div>
                 <div class="options__item">Щука</div>
                 <div class="options__item">Лещ</div>
             </div>
+            <div class="card__boat-type">
+                <span class="card__boat-name">Central Console Boat</span>
+                <span class="options__item card__boat-status card__boat-status--premium">Premium</span>
+            </div>
+            <div class="card__description">
+                <div class="card__text-line">
+                    <span class="card__text">Up to 1 mile from the shore</span><span class="card__text card__text--marker">5 hours</span>
+                </div>
+            </div>
+            <div class="card__text-line card__text-line--alone">
+                <span class="card__text card__text--bold card__text--fire">Last chance!</span>
+            </div>
             <div class="card__bottom">
-                <p class="card__price">from <span class="card__amount">180$</span></p>
-                <button class="card__button">Choose</button>
+                <p class="card__price"><span class="card__amount card__amount--no_left">180$</span></p>
+                <button class="card__button">View details</button>
             </div>
         </div>
+    </section>
+
+    <section class="feedback feedback--white">
+        <div class="feedback__title">Customize you own tour</div>
+        <p class="feedback__text">Only 3 steps to book a fishing tour on your terms.</p>
+        <button class="button feedback__button">Customize tour</button>
+    </section>
+
+    <section class="feedback feedback--grey">
+        <div class="feedback__title">We'd Love Your Feedback</div>
+        <p class="feedback__text">Take a Quick Survey and get $50 Discount!</p>
+        <button class="button feedback__button">Give Me My $50!</button>
     </section>
 
     <!-- FOOTER -->

@@ -4,6 +4,10 @@
   border-bottom: em(1) solid $body-color;
   padding: 0 0 em(16);
 
+  &--no_border {
+    border: 0;
+  }
+
   &__slider {
     padding: em(35) 0 0;
     margin: em(17) 0 0 $side-padding;
@@ -64,5 +68,42 @@
     color: $back-grey;
     font-size: em(14);
     text-decoration: underline;
+  }
+
+  &__stars {
+    display: flex;
+    align-items: center;
+    margin-top: em(6);
+
+    span {
+      color: $main-grey;
+      font-size: em(12);
+      font-style: $regular;
+      margin-left: em(10,12);
+    }
+
+    &--big {
+      margin-top: 0;
+      margin-left: em(30);
+
+      span {
+        font-size: em(14);
+        font-weight: $bold;
+      }
+    }
+  }
+
+  &__star {
+    margin-right: 3px;
+
+    path {
+      opacity: 0.2;
+    }
+
+    &--full {
+      path {
+        opacity: 1;
+      }
+    }
   }
 }

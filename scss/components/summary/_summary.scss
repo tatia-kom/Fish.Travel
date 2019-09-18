@@ -2,17 +2,16 @@
 
 .summary {
   background: white;
-  padding-bottom: em(21);
 
   &__list {
-    margin: 0;
+    margin: 0 $side-padding;
     padding: em(4) 0 0;
   }
 
   &__item {
     display: flex;
     align-items: center;
-    padding: em(13) $side-padding em(14);
+    padding: em(13) 0 em(14);
     border-bottom: em(1) solid $body-color;
 
     &:last-child {
@@ -86,16 +85,23 @@
   }
 
   &__bottom {
-    padding: em(23) $side-padding em(32);
+    padding: em(48) $side-padding em(24);
     border-bottom: em(1) solid $body-color;
+    display: flex;
+    justify-content: space-between;
   }
 
   &__price {
-    font-size: em(43);
+    font-size: em(32);
     font-family: $top-title-font;
+    font-weight: $bold;
     line-height: 0.63;
-    color: $aqua;
+    color: $main-grey;
     margin: em(14,43) 0 em(29,43);
+  }
+
+  &__button {
+    width: em(136);
   }
 
   &__link-wrap {
@@ -107,5 +113,61 @@
     color: $blue;
     font-size: em(14);
     text-decoration: underline;
+  }
+
+  &__block {
+    padding: em(24) $side-padding em(16);
+
+    &--no_top {
+      padding: 0 $side-padding;
+    }
+  }
+
+  &__options {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 4px;
+
+    .options__item {
+      margin-left: 0;
+      margin-top: em(4,12);
+    }
+  }
+
+  &__included {
+    padding: em(20,14) 0 em(20,14) em(16,14);
+    display: flex;
+    align-items: center;
+
+    &--bordered {
+      border-bottom: 1px solid $body-color;
+    }
+
+    .options {
+      padding-left: 0;
+      margin-left: $side-padding;
+    }
+
+    .options__item {
+      margin-left: 0;
+    }
+  }
+
+  &__included-title {
+    font-size: em(14);
+    color: $back-grey;
+  }
+
+  &__title-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__title-link {
+    color: $back-grey;
+    text-decoration: underline;
+    font-size: em(14,18);
+    font-weight: $regular;
   }
 }

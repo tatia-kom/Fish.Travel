@@ -16,6 +16,11 @@
     font-weight: $bold;
     color: $main-grey;
     margin: 0 $side-padding;
+
+    &--margin {
+      margin-top: em(32,18);
+      margin-bottom: em(16,18);
+    }
   }
 
   &__head {
@@ -56,6 +61,14 @@
     margin: em(27,14) em(15,14) 0;
   }
 
+  &__awards-wrap {
+    display: flex;
+
+    .card__award {
+      width: 35%;
+    }
+  }
+
   &__award {
     margin: 0 em(15,12);
     font-size: em(12);
@@ -94,6 +107,22 @@
 
       &:before {
         background-image: url('../img/award-price.svg');
+      }
+    }
+
+    &--family_friendly {
+      color: $green;
+
+      &:before {
+        background-image: url('../img/family-friendly.svg');
+      }
+    }
+
+    &--bestseller {
+      color: #e1a200;
+
+      &:before {
+        background-image: url('../img/bestseller.svg');
       }
     }
   }
@@ -159,13 +188,65 @@
     }
   }
 
+  &__boat-type {
+    margin: em(26) $side-padding em(17);
+    position: relative;
+    color: $main-grey;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: em(40);
+
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: em(24);
+      height: em(24);
+      background: url('../img/boat-type.svg') no-repeat center;
+      background-size: cover;
+    }
+  }
+
+  &__boat-name {
+    font-size: em(12);
+    width: em(150, 12);
+
+    strong {
+      font-weight: $bold;
+      color: $main-grey;
+      display: block;
+    }
+
+    &--big {
+      color: $back-grey;
+      font-size: em(14);
+      width: em(150,14);
+
+      span {
+        color: $main-grey;
+      }
+    }
+  }
+
   &__description {
-    margin: $side-padding $side-padding 0;
+    margin: 0 $side-padding $side-padding;
+    padding: $side-padding 0 em(7);
+    border-top: 1px solid rgba(0, 0, 0, 0.11);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.11);
   }
 
   &__text-line {
     display: flex;
     margin-bottom: em(7);
+
+    &--alone {
+      margin-left: $side-padding;
+      margin-right: $side-padding;
+    }
   }
 
   &__text {
@@ -237,6 +318,13 @@
     }
   }
 
+  &__text-info {
+    margin: em(24,14) $side-padding 0;
+    font-size: em(14);
+    line-height: 1.43;
+    color: $main-grey;
+  }
+
   /*&__stars {
     display: flex;
     align-items: center;
@@ -266,7 +354,7 @@
   }
 
   &__bottom {
-    margin: em(32) $side-padding 0;
+    margin: em(25) $side-padding 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -289,9 +377,10 @@
   }
 
   &__amount {
-    font-size: em(22,16);
-    line-height: 1.23;
+    font-size: em(32,16);
+    line-height: 0.84;
     margin-left: em(8,22);
+    color: $main-grey;
 
     &--no_left {
       margin-left: 0;
@@ -299,14 +388,14 @@
   }
 
   &__button {
-    background: $blue;
+    background: white;
     border-radius: em(4);
     width: em(136);
     height: em(40);
     font-size: em(16);
     font-weight: $bold;
-    color: white;
-    border: 0;
+    color: $blue;
+    border: 1px solid $border-grey;
   }
 
 

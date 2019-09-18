@@ -6,6 +6,37 @@
   padding: $side-padding 0 em(8);
   overflow-x: hidden;
 
+  &__back-with-filter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: em(15);
+
+    .top__back {
+      margin-bottom: 0;
+    }
+  }
+
+  &__customize {
+    color: $back-grey;
+    font-size: em(14);
+    line-height: em(24,14);
+    position: relative;
+    margin-right: em(15,14);
+    padding-left: em(32,14);
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      display: block;
+      width: em(24,14);
+      height: em(24,14);
+      background: url('../img/customize.svg') no-repeat center;
+    }
+  }
+
   &__back {
     color: $back-grey;
     font-size: em(14);
@@ -27,10 +58,17 @@
     }
   }
 
+  &__button {
+    font-size: em(12);
+    width: em(128,12);
+    height: em(24,12);
+    margin-right: em(16,12);
+  }
+
   &__title {
     font-size: em(23);
     font-family: $top-title-font;
-    color: $light-grey;
+    color: $main-grey;
     margin: em(35,23) em(15,23) em(10,23);
   }
 

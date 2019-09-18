@@ -1,0 +1,59 @@
+@import "layout/var";
+
+.feedback {
+  background: $aqua;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  padding: em(41) $side-padding em(32);
+  margin-bottom: em(20);
+
+  &--white {
+    background: white;
+    border-bottom: em(1) solid $body-color;
+    margin-bottom: 0;
+
+    .feedback__title,
+    .feedback__text {
+      color: $main-grey;
+    }
+
+    .feedback__button {
+      background: $blue;
+      color: white;
+    }
+  }
+
+  &--grey {
+    background: #f8f8f8;
+
+    .feedback__title,
+    .feedback__text {
+      color: $main-grey;
+    }
+
+    .feedback__button {
+      color: white;
+      background: #4db67d;
+    }
+  }
+
+  &__title {
+    font-size: em(23);
+    font-family: $top-title-font;
+  }
+
+  &__text {
+    font-size: em(14);
+    margin-top: em(25);
+  }
+
+  &__button {
+    width: em(180);
+    background: white;
+    color: $blue;
+    font-weight: $bold;
+    margin-top: em(30);
+  }
+}
