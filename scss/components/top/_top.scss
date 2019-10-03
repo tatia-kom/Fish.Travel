@@ -18,7 +18,7 @@
   }
 
   &__customize {
-    color: $back-grey;
+    color: $light-grey;
     font-size: em(14);
     line-height: em(24,14);
     position: relative;
@@ -38,11 +38,11 @@
   }
 
   &__back {
-    color: $back-grey;
+    color: $light-grey;
     font-size: em(14);
     line-height: em(24,14);
     position: relative;
-    padding-left: em(31);
+    padding-left: em(33);
     display: block;
     margin: 0 em(15,14) em(15,14);
 
@@ -60,7 +60,9 @@
 
   &__button {
     font-size: em(12);
-    width: em(128,12);
+    font-weight: bold;
+    padding: 0 em(25,12);
+    width: auto;
     height: em(24,12);
     margin-right: em(16,12);
   }
@@ -86,5 +88,39 @@
     font-family: $main-font;
     color: $main-grey;
     margin: em(49, 14) em(15,14) 0;
+  }
+
+
+
+  &__steps {
+    margin-right: em(15,14);
+    font-size: em(14);
+    color: $light-grey;
+    display: flex;
+    align-items: center;
+  }
+
+  &__step {
+    font-size: em(12,14);
+    display: block;
+    width: em(24,12);
+    height: em(24,12);
+    border-radius: 50%;
+    border: 1px solid $border-grey;
+    margin-left: em(8,12);
+    line-height: em(24,12);
+    text-align: center;
+    font-weight: bold;
+
+    &--current {
+      color: black;
+      border: 2px solid black;
+    }
+
+    &--done {
+      color: white;
+      background: #4db67d;
+      border: 2px solid #4db67d;
+    }
   }
 }

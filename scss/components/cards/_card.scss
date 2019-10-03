@@ -29,7 +29,8 @@
   }
 
   &__icon {
-    margin-top: em(6);
+    display: flex;
+    align-items: center;
   }
 
   &__head-num {
@@ -52,6 +53,22 @@
   &__head-aqua {
     color: $aqua;
   }
+  &__head-orange {
+    color: #d06502;
+  }
+  &__head-purple {
+    color: #27059e;
+  }
+
+  &__time {
+    font-weight: normal;
+  }
+
+  &__time-text {
+    font-size: em(14);
+    margin: em(16.14) em(16,14) em(16,14);
+    line-height: 1.43;
+  }
 
   &__subtitle {
     font-size: em(14);
@@ -63,19 +80,15 @@
 
   &__awards-wrap {
     display: flex;
-
-    .card__award {
-      width: 35%;
-    }
   }
 
   &__award {
-    margin: 0 em(15,12);
+    margin: 0 em(8,12) 0 em(16,12);
     font-size: em(12);
     font-weight: $bold;
     line-height: 1.17;
-    padding-left: em(44,12);
-    height: em(32,12);
+    padding-left: em(32,12);
+    height: em(24,12);
     display: flex;
     align-items: center;
     position: relative;
@@ -86,8 +99,8 @@
       position: absolute;
       content: '';
       display: block;
-      width: em(32,12);
-      height: em(32,12);
+      width: em(24,12);
+      height: em(24,12);
       left: 0;
       top: 0;
       background-position: center;
@@ -112,6 +125,7 @@
 
     &--family_friendly {
       color: $green;
+      width: auto;
 
       &:before {
         background-image: url('../img/family-friendly.svg');
@@ -125,12 +139,40 @@
         background-image: url('../img/bestseller.svg');
       }
     }
+
+    &--special {
+      color: $aqua;
+      width: auto;
+
+      &:before {
+        background-image: url('../img/award-special.svg');
+      }
+    }
+
+    &--big_fish {
+      color: #1a77d9;
+      width: auto;
+
+      &:before {
+        background-image: url('../img/award-big-fish.svg');
+      }
+    }
+
+    &--pro_choice {
+      color: #b85053;
+      width: auto;
+
+      &:before {
+        background-image: url('../img/award-pro-choice.svg');
+      }
+    }
   }
 
   &__photos {
     margin-top: em(19);
     display: flex;
     overflow-x: auto;
+    position: relative;
 
     &::-webkit-scrollbar-button {
       width: 2px;
@@ -159,6 +201,48 @@
     &:last-child {
       border-right-width: $side-padding;
     }
+  }
+
+  &__photos-blocks {
+    position: absolute;
+    margin-left: $side-padding;
+    margin-top: em(-34);
+    display: flex;
+  }
+
+  &__photos-block {
+    margin-left: em(8);
+    color: black;
+    background: rgba(255, 255, 255, 0.65);
+    font-size: em(12);
+    font-weight: bold;
+    line-height: 1.33;
+    border-radius: em(12,12);
+    padding: em(5,12) em(10,12) em(4,12);
+    display: flex;
+    align-items: center;
+  }
+
+  &__photos-stars {
+    display: flex;
+  }
+
+  &__photos-star {
+    opacity: 0.3;
+    margin-right: em(2,12);
+
+    &--full {
+      opacity: 1;
+    }
+  }
+
+  &__photos-rate {
+    margin-left: em(6,12);
+  }
+
+  &__photos-revs {
+    font-weight: normal;
+    margin-left: em(13,12);
   }
 
   &__boat-description {
@@ -232,11 +316,38 @@
     }
   }
 
+  &__boat-incl {
+    padding: em(11) $side-padding em(26);
+    margin-bottom: em(20);
+    border-bottom: 1px solid $body-color;
+  }
+
+  &__boat-incl-title {
+    font-size: em(18);
+    font-weight: bold;
+    margin-bottom: em(16,18);
+  }
+
+  &__boat-incl-subtitle {
+    font-size: em(14);
+    color: $light-grey;
+    text-transform: uppercase;
+    margin-bottom: em(10,14);
+
+    &--margin_top {
+      margin-top: em(20,14);
+    }
+  }
+
   &__description {
     margin: 0 $side-padding $side-padding;
     padding: $side-padding 0 em(7);
-    border-top: 1px solid rgba(0, 0, 0, 0.11);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.11);
+    border-top: 1px solid $body-color;
+    border-bottom: 1px solid $body-color;
+
+    &--no_top_border {
+      border-top: none;
+    }
   }
 
   &__text-line {
@@ -276,16 +387,20 @@
       }
     }
 
+    &--margin_left {
+      margin-left: em(16,12);
+    }
+
     &--marker {
-      padding-left: em(17,12);
-      margin-left: em(11,12);
+      padding-left: em(12,12);
+      margin-left: em(8,12);
 
       &:before {
-        width: em(6,12);
-        height: em(6,12);
-        background: $body-color;
+        width: em(4,12);
+        height: em(4,12);
+        background: $main-grey;
         border-radius: 50%;
-        top: em(7,12);
+        top: em(8,12);
       }
     }
 
@@ -298,6 +413,18 @@
         width: em(20,12);
         height: em(20,12);
         background: url('../img/fire.svg') no-repeat center top;
+      }
+    }
+
+    &--attention {
+      margin-left: em(22,12);
+      padding-left: em(24,12);
+
+      &:before {
+        top: 0;
+        width: em(20,12);
+        height: em(20,12);
+        background: url('../img/attention.svg') no-repeat center top;
       }
     }
 
@@ -369,15 +496,15 @@
   }
 
   &__price {
-    color: $aqua;
-    font-family: $top-title-font;
-    font-size: em(16);
+    color: $light-grey;
+    font-weight: bold;
+    font-size: em(12);
     display: flex;
     align-items: center;
   }
 
   &__amount {
-    font-size: em(32,16);
+    font-size: em(32,12);
     line-height: 0.84;
     margin-left: em(8,22);
     color: $main-grey;
@@ -390,12 +517,12 @@
   &__button {
     background: white;
     border-radius: em(4);
-    width: em(136);
+    padding: 0 em(21);
     height: em(40);
     font-size: em(16);
     font-weight: $bold;
     color: $blue;
-    border: 1px solid $border-grey;
+    border: solid 1px rgba(0, 94, 145, 0.27);
   }
 
 

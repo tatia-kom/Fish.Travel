@@ -1,14 +1,14 @@
 @import "layout/var";
 
 .location-form {
+  width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
 
   &__top {
     position: relative;
-    padding: em(12) em(48) em(12) $side-padding;
-    border-bottom: em(1) solid $body-color;
+    padding: $side-padding $side-padding em(12) $side-padding;
     flex-shrink: 0;
   }
 
@@ -16,8 +16,8 @@
     width: em(24);
     height: em(24);
     position: absolute;
-    top: em(12);
-    right: em(12);
+    top: em(24);
+    right: em(24);
     background: url('../img/x.svg') no-repeat center;
     background-size: em(14);
   }
@@ -27,7 +27,10 @@
     line-height: 1.5;
     font-weight: $bold;
     width: 100%;
-    padding: 0;
+    padding: em(8) em(16);
+    border: 1px solid $blue;
+    border-radius: em(4);
+    color: $main-grey;
   }
 
   &__list {
@@ -40,6 +43,7 @@
     line-height: em(24,14);
     padding: em(10,14) em(15,14) em(14,14);
     border-bottom: em(1,14) solid $body-color;
+    color: $main-grey;
   }
 
   &__country {
