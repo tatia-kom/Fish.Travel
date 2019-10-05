@@ -35,9 +35,11 @@
 
   &__payments {
     margin: em(22) $side-padding 0;
+    display: flex;
 
     img {
-      max-width: em(35);
+      height: em(24);
+      margin-right: em(8);
     }
   }
 
