@@ -1,0 +1,115 @@
+@import "layout/var";
+
+.sale {
+  background: #f8f8f8;
+  padding: 0 $side-padding em(28);
+
+  &__title {
+    font-size: em(18);
+    font-weight: bold;
+    color: $main-grey;
+    margin-bottom: em(16,22);
+  }
+
+  &__block {
+    border-radius: 4px;
+    box-shadow: 0 2px 21px 0 rgba(0, 0, 0, 0.11), 0 2px 3px 0 rgba(0, 0, 0, 0.04);
+    background: white;
+    margin-bottom: em(16);
+    padding: em(16) em(16) em(21);
+  }
+
+  &__flex {
+    display: flex;
+    align-items: center;
+
+    &:last-child {
+      margin-top: em(16);
+    }
+  }
+
+  &__num {
+    border: solid 1px $border-grey;
+    border-radius: em(4,28);
+    font-size: em(28);
+    font-family: $top-title-font;
+    font-weight: bold;
+    color: #1673d9;
+    padding: 0 em(8,28) 0 em(29,28);
+    position: relative;
+
+    &:before {
+      content: '';
+      display: block;
+      width: 15px;
+      height: 2px;
+      background: #1673d9;
+      position: absolute;
+      top: 17px;
+      left: 8px;
+      transform: rotate(-45deg);
+    }
+
+    &:after {
+      content: '';
+      display: block;
+      width: 15px;
+      height: 2px;
+      background: #1673d9;
+      position: absolute;
+      top: 17px;
+      left: 8px;
+      transform: rotate(45deg);
+    }
+  }
+
+  &__name {
+    font-size: em(12);
+    color: $main-grey;
+    margin-left: em(8,12);
+    width: em(90,12);
+  }
+
+  &__details {
+    color: $light-grey;
+    font-size: em(12);
+    width: em(88,12);
+    height: em(24,12);
+    border-radius: em(12,12);
+    border: solid 1px $border-grey;
+    margin-left: auto;
+    cursor: pointer;
+    flex-shrink: 0;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  &__price {
+    color: $main-grey;
+    font-size: em(28);
+    font-weight: bold;
+    font-family: $top-title-font;
+    width: em(85,28);
+    flex-shrink: 0;
+  }
+
+  &__old-price {
+    color: #9d9d9d;
+    font-size: em(16);
+    font-weight: bold;
+    font-family: $top-title-font;
+    text-decoration: line-through;
+  }
+
+  &__button {
+    margin-left: auto;
+    font-size: em(12);
+    width: em(88,12);
+    height: em(24,12);
+    border-radius: em(12,12);
+    box-shadow: 0 8px 9px 0 rgba(11, 144, 217, 0.3);
+    background-image: linear-gradient(to right, #5dc2d0, #1673d9);
+  }
+}
